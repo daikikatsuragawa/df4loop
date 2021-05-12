@@ -51,13 +51,13 @@ for index, row in df_iterator.iterrows():
     tmp = row["column_1"]
 ```
 
-If you do not need to output the index, set `return_indexes = False`.
+If you do not need to output the index, set `return_indexes=False`.
 
 ```py
 from df4loop import DFIterator
 
 df_iterator = DFIterator(df)
-for row in df_iterator.iterrows(return_index=False):
+for row in df_iterator.iterrows(return_indexes=False):
     tmp = row["column_1"]
 ```
 
